@@ -5,9 +5,9 @@ import { navVariants } from '../utilities/motion';
 
 const Navbar = () => {
     return (
-        <motion.nav variants={navVariants} initial='hidden' whileInView='show' className='py-8 px-6 relative'>
+        <motion.nav variants={navVariants} initial='hidden' whileInView='show' className='py-8 relative'>
             <div className='absolute w-[70%] inset-0 gradient-01' />
-            <div className='flex justify-between'>
+            <div className='flex justify-between items-center'>
                 <h1>Developed by Noel</h1>
                 <a
                     href='#'
