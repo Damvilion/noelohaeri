@@ -5,7 +5,15 @@ import { navVariants, fadeIn } from '../utilities/motion';
 import chatimage from './chatpic.jpg';
 import Image from 'next/image';
 
-const ProjectPage = ({ id, imgUrl, title, index, active, handleClick }) => {
+type projects = {
+    id: string;
+    imgUrl: string;
+    title: string;
+    index: number;
+    active: string;
+};
+
+const ProjectPage = ({ id, imgUrl, title, index, active }: projects) => {
     return (
         <motion.div
             variants={fadeIn('right', 'spring', index * 0.5, 0.75)}

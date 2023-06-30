@@ -21,7 +21,7 @@ const Projects = () => {
 
                 <div className='mt-5 flex flex-col lg:flex-row min-h-[70vh] gap-5'>
                     {projectList.map((project, index) => (
-                        <ProjectPage key={project.id} {...project} index={index} active={active} handleClick={setActive} />
+                        <ProjectPage key={project.id} {...project} index={index} active={active} />
                     ))}
                 </div>
             </motion.div>
