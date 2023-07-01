@@ -85,3 +85,23 @@ export const fadeIn = (direction: string, type: any, delay: number, duration: nu
         },
     },
 });
+
+export const planetVariants = (direction: string) => ({
+    hidden: {
+        opacity: 0,
+        scale: 0.5,
+        x: direction === 'left' ? '-100%' : '100%',
+        rotate: 120,
+    },
+    show: {
+        x: 0,
+        rotate: 0,
+        opacity: 1,
+        scale: 1,
+        transition: {
+            type: 'spring',
+            duration: 1.8,
+            delay: 0.5,
+        },
+    },
+});

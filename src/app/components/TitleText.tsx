@@ -7,16 +7,17 @@ type name = {
     name: string;
     style: string;
     delay: number;
+    reanimate: boolean;
 };
 
-const TitleText = ({ name, style, delay }: name) => {
+const TitleText = ({ name, style, delay, reanimate }: name) => {
     return (
         <section className='flex flex-col items-center justify-center'>
             <motion.div
                 variants={staggerContainer(0, delay)}
                 initial='hidden'
                 whileInView='show'
-                viewport={{ once: false, amount: 0.25 }}>
+                viewport={{ once: !reanimate, amount: 0.25 }}>
                 <motion.p variants={textContainer}>
                     {Array.from(name).map((letter: any, index) => (
                         <motion.span className={`${style}`} variants={textVariant2} key={index}>
