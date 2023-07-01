@@ -5,7 +5,12 @@ import { navVariants } from '../utilities/motion';
 
 const Navbar = () => {
     return (
-        <motion.nav variants={navVariants} initial='hidden' whileInView='show' className='py-8 relative' viewport={{ once: true }}>
+        <motion.nav
+            variants={navVariants}
+            initial='hidden'
+            whileInView='show'
+            className='py-8 relative z-10'
+            viewport={{ once: true }}>
             <div className='absolute h-[300px] w-[80%] gradient-01 opacity-20 z-0' />
             <div className='flex justify-between items-center'>
                 <h1>Developed by Noel</h1>
