@@ -11,12 +11,7 @@ const Projects = () => {
     const [active, setActive] = useState('Villion Chat');
     return (
         <section id='projects'>
-            <motion.div
-                variants={staggerContainer(0, 0)}
-                initial='hidden'
-                whileInView='show'
-                viewport={{ once: false, amount: 0.25 }}
-                className='mx-auto flex flex-col'>
+            <motion.div variants={staggerContainer(0, 0)} initial='hidden' whileInView='show' viewport={{ once: true, amount: 0.25 }} className='mx-auto flex flex-col'>
                 <TitleText name='Projects' style='' delay={0} reanimate={false} />
 
                 <div className='mt-5 flex flex-col lg:flex-row min-h-[70vh] gap-5'>
