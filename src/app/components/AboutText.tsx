@@ -5,10 +5,10 @@ import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const AboutText = () => {
     return (
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1.8 }} className=''>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1.8 }} className=''>
             <div>
                 <div className='flex flex-wrap max-w-xl'>
-                    <p>
+                    <p className='text-center'>
                         A{' '}
                         <RoughNotation type='highlight' show={true} animationDelay={2300} color='purple'>
                             dedicated
