@@ -46,7 +46,7 @@ body {
         hsl(221deg 73% 70%) 74%,
         hsl(220deg 76% 51%) 100%
     );
-    filter: blur(300px);
+    filter: blur(400px);
 }
 
 .absoultePositioning {

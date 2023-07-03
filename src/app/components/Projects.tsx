@@ -10,13 +10,13 @@ import ProjectPage from './ProjectPage';
 const Projects = () => {
     const [active, setActive] = useState('Villion Chat');
     return (
-        <section id='projects'>
+        <section id='projects' className='py-1'>
             <motion.div variants={staggerContainer(0, 0)} initial='hidden' whileInView='show' viewport={{ once: true, amount: 0.25 }} className='mx-auto flex flex-col'>
                 <TitleText name='Projects' style='' delay={0} reanimate={false} />
 
                 <div className='mt-5 flex flex-col lg:flex-row min-h-[70vh] gap-5'>
                     {projectList.map((project, index) => (
-                        <ProjectPage key={project.id} {...project} index={index} active={active} />
+                        <ProjectPage key={index} {...project} index={index} active={active} />
                     ))}
                 </div>
             </motion.div>
