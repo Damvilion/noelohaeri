@@ -12,7 +12,7 @@ const FrontPage = () => {
             <div className='absoultePositioning h-[300px] w-[80%] gradient-02 opacity-80 z-0' />
             <div className='z-20'>
                 <div className='flex flex-col items-center'>
-                    <TitleText name='Noel Ohaeri' style='text-5xl py-2 text-pink-500 font-bold' delay={0.5} reanimate={false} />
+                    <TitleText name='Noel Ohaeri' style='text-5xl py-2 text-pink-500 font-bold font-Inter' delay={0.5} reanimate={false} />
                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1.8 }}>
                         <h3 className='text-2xl py-2'>Software Engineer</h3>
                     </motion.div>

@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { staggerContainer } from '../utilities/motion';
-import TitleText from './TitleText';
-import { projectList } from '../projectsList';
-import ProjectPage from './ProjectPage';
 import { chatList } from '../../../public/images/chatAppImgs';
 
 const Projects = () => {
