@@ -9,6 +9,6 @@ export const chatList = [
     },
     {
         id: 3,
-        imgUrl: '/images/chatAppImgs/chatPic.jpg',
+        imgUrl: '/images/chatAppImgs/chatpic.jpg',
     },
 ];
