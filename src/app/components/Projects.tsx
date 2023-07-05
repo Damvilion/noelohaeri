@@ -14,7 +14,7 @@ const Projects = () => {
             <h1>projects</h1>
             <div className='flex justify-center flex-wrap'>
                 <div className=' text-center shadow-lg rounded-xl my-10  duration-100 '>
-                    <div className=' max-w-[90%] rounded-md overflow-hidden my-2 p-3 w-[100%] mx-auto'>
+                    <div className=' max-w-[90%] rounded-md overflow-hidden my-2 w-[100%] mx-auto'>
                         <img src='/images/chatAppImgs/chatpic.jpg' alt='react_logo' className='mx-auto' />
                     </div>
                     <div className='flex justify-center gap-5 relative z-20'>
