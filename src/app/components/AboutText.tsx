@@ -7,13 +7,17 @@ const AboutText = () => {
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1.8 }} className=''>
             <div>
-                <div className='flex flex-wrap max-w-xl'>
-                    <p className='text-center text-white'>
+                <div className='flex flex-wrap max-w-xl text-center'>
+                    <p className='mx-auto text-white'>
                         A{' '}
                         <RoughNotation type='highlight' show={true} animationDelay={2300} color='purple'>
                             dedicated
                         </RoughNotation>{' '}
-                        software engineer specializing in creating exceptional digital experiences. With a strong focus on{' '}
+                        software engineer specializing in creating exceptional digital experiences.
+                    </p>
+
+                    <p className='mx-auto'>
+                        With a strong focus on
                         <RoughNotation type='highlight' show={true} animationDelay={2900} color='red'>
                             quality and precision
                         </RoughNotation>{' '}
@@ -22,7 +26,7 @@ const AboutText = () => {
                     </p>
 
                     <p className='mx-auto'>
-                        <RoughNotation type='highlight' show={true} animationDelay={3700} color='red'>
+                        <RoughNotation type='circle' show={true} animationDelay={3700} color='red'>
                             user-friendly applications
                         </RoughNotation>
                     </p>
