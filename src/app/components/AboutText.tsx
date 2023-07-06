@@ -18,14 +18,14 @@ const AboutText = () => {
                             quality and precision
                         </RoughNotation>{' '}
                         , I leverage my expertise in front-end development to craft elegant and intuitive user interfaces. My toolkit includes React.js, Next.js, JavaScript/TypeScript, and Tailwind
-                        CSS, enabling me to build{' '}
-                        <RoughNotation type='circle' show={true} animationDelay={3700} color='red'>
-                            visually stunning and user-friendly
-                        </RoughNotation>{' '}
-                        applications
+                        CSS, enabling me to build visually stunning and{' '}
                     </p>
 
-                    <p></p>
+                    <p className='mx-auto'>
+                        <RoughNotation type='highlight' show={true} animationDelay={3700} color='red'>
+                            user-friendly applications
+                        </RoughNotation>
+                    </p>
                 </div>
             </div>
         </motion.div>
