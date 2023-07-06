@@ -8,13 +8,8 @@ import About from './About';
 
 const FrontPage = () => {
     return (
-<<<<<<< HEAD
         <section className='flex sm:flex-col sm:items-center items-center justify-center relative z-20'>
             <div className='absoultePositioning h-[300px] w-[80%] gradient-02 opacity-80 z-3' />
-=======
-        <section className='flex sm:flex-col sm:items-center items-center justify-center relative'>
-            <div className='absoultePositioning h-[300px] w-[80%] gradient-02 opacity-80 z-0' />
->>>>>>> a9a4f95acb95db0411a7798535f136fa968030ac
             <div className='z-20'>
                 <div className='flex flex-col items-center'>
                     <TitleText name='Noel Ohaeri' style='text-5xl py-2 text-pink-500 font-bold font-Inter' delay={0.5} reanimate={false} />

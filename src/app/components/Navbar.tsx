@@ -7,15 +7,9 @@ const Navbar = () => {
     return (
         <nav className='py-10 mb-12'>
             <motion.nav variants={navVariants} initial='hidden' whileInView='show' className='py-8 relative z-10' viewport={{ once: true }}>
-<<<<<<< HEAD
                 <div className='absolute h-[300px] w-[80%] gradient-01 opacity-20 z-2' />
                 <div className='flex justify-between items-center relative z-10'>
                     <h1>Developed by Noel</h1>
-=======
-                <div className='absolute h-[300px] w-[80%] gradient-01 opacity-20 z-0' />
-                <div className='flex justify-between items-center relative'>
-                    <h1 className='text-white'>Developed by Noel</h1>
->>>>>>> a9a4f95acb95db0411a7798535f136fa968030ac
                     <motion.div
                         whileHover={{ scale: 1.2, rotate: 10 }}
                         whileTap={{
