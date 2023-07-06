@@ -8,7 +8,7 @@ const AboutText = () => {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1.8 }} className=''>
             <div>
                 <div className='flex flex-wrap max-w-xl'>
-                    <p className='text-center'>
+                    <p className='text-center text-white'>
                         A{' '}
                         <RoughNotation type='highlight' show={true} animationDelay={2300} color='purple'>
                             dedicated
@@ -18,11 +18,10 @@ const AboutText = () => {
                             quality and precision
                         </RoughNotation>{' '}
                         , I leverage my expertise in front-end development to craft elegant and intuitive user interfaces. My toolkit includes React.js, Next.js, JavaScript/TypeScript, and Tailwind
-                        CSS, enabling me to build{' '}
+                        CSS, enabling me to build visually stunning and{' '}
                         <RoughNotation type='circle' show={true} animationDelay={3700} color='red'>
-                            visually stunning and user-friendly
-                        </RoughNotation>{' '}
-                        applications
+                            user-friendly applications
+                        </RoughNotation>
                     </p>
 
                     <p></p>
