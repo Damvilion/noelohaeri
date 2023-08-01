@@ -11,13 +11,16 @@ const Navbar = () => {
                 <div className='flex justify-between items-center relative z-10'>
                     <h1>Developed by Noel</h1>
                     <motion.div
-                        whileHover={{ scale: 1.2, rotate: 10 }}
+                        whileHover={{ scale: 1.2 }}
                         whileTap={{
                             scale: 0.8,
                             rotate: 10,
                             borderRadius: '100%',
                         }}>
-                        <a href='/Noel_Ohaeri.pdf' target='_blank' className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white px-4 py-2 rounded-md ml-8'>
+                        <a
+                            href='/Noel_Ohaeri (1).pdf'
+                            target='_blank'
+                            className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white px-4 py-2 rounded-md ml-8'>
                             Resume
                         </a>
                     </motion.div>
