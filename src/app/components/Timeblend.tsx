@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { timeblendpics } from '../../../public/images/chatAppImgs';
 import { motion } from 'framer-motion';
+import { Drawer } from 'vaul';
 
 const Timeblend = () => {
     const [slide, setSlide] = useState(0);
@@ -40,9 +41,34 @@ const Timeblend = () => {
                             Source Code
                         </a>
                         <span>|</span>
-                        <a href='https://timeblend.fyi/' target='_blank' rel='noopener noreferrer'>
-                            Project
-                        </a>
+                        <Drawer.Root>
+                            <Drawer.Trigger asChild>
+                                <button>Project</button>
+                            </Drawer.Trigger>
+                            <Drawer.Portal>
+                                <Drawer.Overlay className='fixed inset-0 bg-black/40' />
+                                <Drawer.Content className='bg-zinc-100 flex flex-col rounded-t-[10px] mt-24 bottom-0 left-0 right-0 fixed z-50'>
+                                    <div className='p-4 bg-[#312d38] rounded-t-[10px] flex-1'>
+                                        <div className='mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8' />
+                                        <div className='max-w-md mx-auto'>
+                                            <Drawer.Title className='font-medium mb-4 text-center'>Timeblend.</Drawer.Title>
+                                            <p className='text-zinc-100 mb-2 text-center'>
+                                                TimeBlend is a modern scheduling tool designed to streamline the process of finding the optimal
+                                                communal time to meet.
+                                            </p>
+
+                                            <p className='text-center text-[#EC4899]'>
+                                                <button className='cursor-pointer rounded bg-[#EC4899] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] hover:bg-[#ff4fa7]'>
+                                                    <a href='https://timeblend.fyi/' target='_blank' rel='noopener noreferrer'>
+                                                        Project
+                                                    </a>
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Drawer.Content>
+                            </Drawer.Portal>
+                        </Drawer.Root>
                     </div>
                 </div>
             </div>
