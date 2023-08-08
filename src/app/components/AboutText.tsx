@@ -18,11 +18,11 @@ const AboutText = () => {
 
                     <p className='mx-auto'>
                         With a strong focus on
-                        <RoughNotation type='highlight' show={true} animationDelay={2900} color='red'>
+                        <RoughNotation type='highlight' show={true} animationDelay={2900} color='purple'>
                             quality and precision
                         </RoughNotation>{' '}
-                        , I leverage my expertise in front-end development to craft elegant and intuitive user interfaces. My toolkit includes React.js, Next.js, JavaScript/TypeScript, and Tailwind
-                        CSS, enabling me to build visually stunning and{' '}
+                        , I leverage my expertise in front-end development to craft elegant and intuitive user interfaces. My toolkit includes
+                        React.js, Next.js, JavaScript/TypeScript, and Tailwind CSS, enabling me to build visually stunning and{' '}
                     </p>
 
                     <p className='mx-auto'>
