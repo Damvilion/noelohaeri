@@ -9,7 +9,9 @@ const Navbar = () => {
             <motion.nav variants={navVariants} initial='hidden' whileInView='show' className='py-8 relative z-10' viewport={{ once: true }}>
                 <div className='absolute h-[300px] w-[80%] gradient-01 opacity-20 z-2' />
                 <div className='flex justify-between items-center relative z-10'>
-                    <h1>Developed by Noel</h1>
+                    <a href='/'>
+                        <h1>Developed by Noel</h1>
+                    </a>
                     <motion.div
                         whileHover={{ scale: 1.2 }}
                         whileTap={{

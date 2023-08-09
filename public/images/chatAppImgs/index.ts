@@ -23,3 +23,10 @@ export const timeblendpics = [
         imgUrl: '/images/timeblend/image2.jpg',
     },
 ];
+
+export const priorityBlendPics = [
+    {
+        id: 1,
+        imgUrl: '/images/priorityHub/priorityFrontPage.jpg',
+    },
+];

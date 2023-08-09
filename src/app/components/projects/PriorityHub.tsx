@@ -1,24 +1,25 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { timeblendpics } from '../../../public/images/chatAppImgs';
+import { priorityBlendPics } from '../../../../public/images/chatAppImgs';
 import { motion } from 'framer-motion';
 import { Drawer } from 'vaul';
 
-const Timeblend = () => {
+const PriorityHub = () => {
     const [slide, setSlide] = useState(0);
-    const [currentImg, setCurrentImg] = useState(timeblendpics[slide].imgUrl);
+    const [currentImg, setCurrentImg] = useState(priorityBlendPics[slide].imgUrl);
 
     useEffect(() => {
-        setCurrentImg(timeblendpics[slide].imgUrl);
+        setCurrentImg(priorityBlendPics[slide].imgUrl);
     }, [slide]);
 
     const nextSlide = () => {
-        if (slide >= timeblendpics.length - 1) {
+        if (slide >= priorityBlendPics.length - 1) {
             setSlide(0);
         } else {
             setSlide((prevSlide) => prevSlide + 1);
         }
     };
+
     return (
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
             <div className='flex justify-center flex-wrap'>
@@ -34,10 +35,10 @@ const Timeblend = () => {
                         </button>
                     </div>
 
-                    <h2 className='text-xl font-medium pt-8 pb-2'>Timeblend</h2>
+                    <h2 className='text-xl font-medium pt-8 pb-2'>Priority Hub</h2>
                     <div className=' mx-auto py-2'></div>
                     <div className='py-4 text-[#EC4899] flex justify-evenly relative z-20'>
-                        <a href='https://github.com/Damvilion/timeblend' target='_blank'>
+                        <a href='https://github.com/Damvilion/priorityhub' target='_blank'>
                             Source Code
                         </a>
                         <span>|</span>
@@ -51,19 +52,20 @@ const Timeblend = () => {
                                     <div className='p-4 bg-[#312d38] rounded-t-[10px] flex-1'>
                                         <div className='mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8' />
                                         <div className='max-w-md mx-auto'>
-                                            <Drawer.Title className='font-medium mb-4 text-center'>Timeblend.</Drawer.Title>
+                                            <Drawer.Title className='font-medium mb-4 text-center text-white'>Priority Hub</Drawer.Title>
                                             <p className='text-zinc-100 mb-2 text-center'>
-                                                TimeBlend is a modern scheduling tool designed to streamline the process of finding the optimal
-                                                communal time to meet.
+                                                Elevate your productivity with Priority Hub: the ultimate task management app. Effortlessly drag and
+                                                drop tasks between columns for seamless organization and progress tracking, empowering you to stay on
+                                                top of your priorities.
                                             </p>
 
-                                            <p className='text-center text-[#EC4899]'>
-                                                <a href='https://timeblend.fyi/' target='_blank' rel='noopener noreferrer'>
+                                            <a href='https://priorityhub-six.vercel.app/' target='_blank' rel='noopener noreferrer'>
+                                                <p className='text-center text-[#EC4899]'>
                                                     <button className='cursor-pointer rounded bg-[#EC4899] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] hover:bg-[#ff4fa7]'>
                                                         Project
                                                     </button>
-                                                </a>
-                                            </p>
+                                                </p>
+                                            </a>
                                         </div>
                                     </div>
                                 </Drawer.Content>
@@ -76,4 +78,4 @@ const Timeblend = () => {
     );
 };
 
-export default Timeblend;
+export default PriorityHub;
