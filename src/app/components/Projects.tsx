@@ -7,7 +7,7 @@ import PriorityHub from './projects/PriorityHub';
 
 const Projects = () => {
     return (
-        <section id='projects' className='py-1 flex flex-col items-center text-white'>
+        <section id='projects' className='py-1 flex flex-col items-center text-white relative z-20'>
             <h1>projects</h1>
             <ChatApp />
             <PriorityHub />
