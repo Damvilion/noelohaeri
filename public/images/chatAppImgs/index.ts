@@ -29,4 +29,8 @@ export const priorityBlendPics = [
         id: 1,
         imgUrl: '/images/priorityHub/priorityFrontPage.jpg',
     },
+    {
+        id: 1,
+        imgUrl: '/images/priorityHub/priorityHubTaskPage.jpg',
+    },
 ];
