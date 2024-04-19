@@ -55,4 +55,8 @@ export const ToolsList = [
         id: 7,
         imgUrl: '/images/postgresql.svg',
     },
+    {
+        id: 8,
+        imgUrl: '/images/rusty.png',
+    },
 ];
